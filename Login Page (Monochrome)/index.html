@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page (Monochrome)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        overflow: hidden;
+      }
+      .secondary {
+        color: #767676;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="lg:mx-20 flex flex-row justify-center">
+      <!-- Container 1 -->
+      <div class="lg:w-3/5 w-full h-screen mt-20 p-4">
+        <img src="logo.svg" width="120" height="30" />
+        <div class="px-4 mt-16">
+          <h1 class="text-3xl font-semibold">Welcome Back</h1>
+          <p class="secondary mt-3 px-1">
+            New to Acme?
+            <a href="#" class="text-black font-semibold">Create an account.</a>
+          </p>
+        </div>
+        <div class="px-4 mt-20">
+          <div>
+            <h4 class="secondary font-medium px-1 py-1">Email</h4>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="focus:outline-none focus:ring-0 border border-[#CCCCCC] px-4 py-2 rounded-md w-full placeholder:font-medium font-medium"
+            />
+          </div>
+          <div class="mt-6">
+            <h4 class="secondary font-medium px-1 py-1">Password</h4>
+            <input
+              type="password"
+              placeholder="***************"
+              class="focus:outline-none focus:ring-0 border border-[#CCCCCC] px-4 py-2 rounded-md w-full placeholder:font-medium font-medium"
+            />
+          </div>
+        </div>
+        <div class="px-4 mt-8 flex justify-between">
+          <div class="flex flex-row space-x-2 items-center justify-center">
+            <input type="checkbox" class="outline-[#CCCCCC]" />
+            <p class="text-sm secondary">Remember for 30 days</p>
+          </div>
+          <div>
+            <a href="#" class="font-semibold text-sm">Reset password</a>
+          </div>
+        </div>
+        <div class="px-4 mt-16">
+          <button
+            class="w-full text-center bg-[#383838] text-white py-2 font-semibold text-base rounded-md hover:opacity-90"
+          >
+            Sign in
+          </button>
+        </div>
+      </div>
+      <!-- Container 2 -->
+      <div
+        class="w-4/5 h-full lg:flex flex-col justify-center items-center pb-30 pl-40 h-screen border-l border-gray-300 hidden"
+      >
+        <img src="graphic.svg" width="500" />
+        <p class="font-semibold text-lg">People have increased their sales by 30%</p>
+        <div class="flex flex-row space-x-4 mt-4    ">
+            <div class="w-4 h-4 bg-[#CDCDCD] rounded-full cursor-pointer"></div>
+            <div class="w-4 h-4 bg-[#CDCDCD] rounded-full cursor-pointer"></div>
+            <div class="w-4 h-4 bg-[#CDCDCD] rounded-full cursor-pointer"></div>
+            <div class="w-4 h-4 bg-[#CDCDCD] rounded-full cursor-pointer"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
